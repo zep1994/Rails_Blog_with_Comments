@@ -242,7 +242,7 @@ DEPENDENCIES
   chromedriver-helper
   coffee-rails (~> 4.2)
   guard (~> 2.15)
-  guard-livereload (~> 2.5, >= 2.5.2)
+  guard-livereload (~> 2.5)
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   puma (~> 3.11)
@@ -262,4 +262,4 @@ RUBY VERSION
    ruby 2.5.1p57
 
 BUNDLED WITH
-   1.16.2
+   1.16.6
