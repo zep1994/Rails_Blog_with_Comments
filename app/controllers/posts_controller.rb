@@ -21,12 +21,19 @@ class PostsController < ApplicationController
     def show
     end
 
+    def update
+        if @post.update(posts_params)
+            redirect_to @post 
+        else  
+            render 'edit'
+        end
+    end
+
     def edit
     end
 
-    def update
+    def delete
     end
-
 
     private
     
