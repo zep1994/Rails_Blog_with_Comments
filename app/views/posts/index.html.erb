@@ -1,7 +1,19 @@
-<h1 class="title">Blog Index</h1>
+     <section class="hero is-success is-fullheight">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">
+              <%= link_to "FourSquare", root_path %>
+            </h1>
+            <h2 class="subtitle">
+              There's always more than one view
+            </h2>
+          </div>
+        </div>
+      </section>
 
 <section class="section">
     <div class="container">
+         <%= link_to "Create new post", new_post_path, class: "button is-primary" %>
         <% @posts.each do |post| %>
             <div class="card">
                 <div class="card=content">
