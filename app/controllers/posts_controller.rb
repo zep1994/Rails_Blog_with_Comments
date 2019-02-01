@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+        before_action :post, only: [:show, :edit, :update]
 
     def index 
         @posts = Post.all.order("created_at DESC")
@@ -18,11 +19,20 @@ class PostsController < ApplicationController
     end
 
     def show
-        @post = Post.find(params[:id])
+    end
+
+    def edit
+    end
+
+    def update
     end
 
 
     private
+    
+    def post
+        @post = Post.find(params[:id])
+    end
 
     def posts_params
         params.require(:post).permit(:title, :content)
